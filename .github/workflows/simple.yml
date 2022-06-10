@@ -4,8 +4,8 @@ jobs:
   run-shell-command:
     runs-on: ubuntu-latest
     steps:
-      - name: echoo a string
-        run: echo "Hellow World"
+      - name: echo a string
+        run: echoo "Hellow World"
       - name: multiline script
         run: |
           node -v
