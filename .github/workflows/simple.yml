@@ -5,8 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: echoo "Hellow World"
+        run: echo "Hellow World"
       - name: multiline script
         run: |
           node -v
           npm -v
+      - name: multiple linkes
+        run: |
+          import platform
+          print
+          (platform.processor())
+        shell: python
+      
